@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:text="Share with"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_whatsapp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/whatsapp" />
+
+        <ImageView
+            android:id="@+id/image_twitter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/tweet" />
+
+        <ImageView
+            android:id="@+id/image_instagram"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/insta" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_copy_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copy Link"
+        android:layout_margin="16dp"/>
+</LinearLayout>

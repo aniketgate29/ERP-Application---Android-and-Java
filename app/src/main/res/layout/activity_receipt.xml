@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+        />
+
+
+    <TextView
+        android:id="@+id/textHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" KRM UNITED SOFTWARE "
+
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/textHeading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFFICE NO B68, B WING, JAI GANESH VISION, Shubhashri Residency, Ganga Nagar, Akurdi, PUNE, Pimpri-Chinchwad, Maharashtra 411031 Phone: 080807 10134 "
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:layout_below="@id/textHeading"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/textHeading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: 080807 10134 "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textHeading1"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/textHeading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail:krmunited007@gmail.com "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textHeading2"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/textHeading4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.krmunited.com/ "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textHeading3"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/receipttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="35dp"
+        android:text="RECEIPT"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/textHeading4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewTransactionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/textViewCustomerName"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewPaymentMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/textViewTransactionDate"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/textViewPaymentMode"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Download Receipt"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@drawable/button_background" />
+
+
+</RelativeLayout>

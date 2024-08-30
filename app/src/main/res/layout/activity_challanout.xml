@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:text="Challan Out"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/primaryDarkColor"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/Date"
+            android:text=" Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+        <EditText
+            android:id="@+id/selectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:inputType="none"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supplier Name:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- GSTIN -->
+        <EditText
+            android:id="@+id/mobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mno"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Address:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="add"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST no:"/>
+
+        <Spinner
+            android:id="@+id/gstBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="State"/>
+
+        <!-- Add Spinner for selecting states -->
+        <Spinner
+            android:id="@+id/spinnerState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Pincode"/>
+
+        <EditText
+            android:id="@+id/editPincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAddProduct"
+            android:text="Add Product"
+            android:background="@drawable/button_background"
+            android:textColor="@color/primaryDarkColor"
+            android:layout_marginRight="10dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Mobile No -->
+        <EditText
+            android:id="@+id/tamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0000"
+            android:minHeight="48dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First horizontal LinearLayout for the top three buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- First horizontal LinearLayout for the top three buttons -->
+
+                <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn" android:layout_below="@+id/stateofsupp">
+                    <LinearLayout android:id="@+id/productEntries1" android:layout_width="match_parent" android:layout_height="148dp" android:layout_marginTop="16dp" android:orientation="vertical"> </LinearLayout>
+                </ScrollView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAdd"
+                        android:text="Save"
+                        android:background="@drawable/button_background"
+                        android:textColor="@color/primaryDarkColor"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="20dp"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="1dp"
+                        android:id="@+id/btndelete"
+                        android:text="Cancel"
+                        android:background="@drawable/button_background"
+                        android:textColor="@color/primaryDarkColor"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

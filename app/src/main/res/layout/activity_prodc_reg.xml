@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- Background Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:alpha="0.2"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/primaryDarkColor"
+
+            android:text="Product Registration"
+            android:textStyle="bold" />
+
+        <!-- Product ID -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Product ID"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextProductId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Product ID"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- Product Type -->
+        <TextView
+            android:id="@+id/textViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Product Type:" />
+
+        <Spinner
+            android:id="@+id/producttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:hint="Select Product Type"
+            android:minHeight="48dp" />
+
+        <!-- ... (Rest of your code) -->
+        <!-- Default Barcode -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="DEF Barcode"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextDefaultBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Default Barcode"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- System Barcode -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SYS Barcode"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextSystemBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="System Barcode"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/productid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Product" />
+
+        <EditText
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Product Name"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textViewProductDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Technical Description" />
+
+        <EditText
+            android:id="@+id/proddesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Technical Description"
+            android:minHeight="48dp" />
+
+        <!-- Company with Option Menu -->
+        <TextView
+            android:id="@+id/campane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Campany:" />
+
+        <EditText
+            android:id="@+id/spinnerCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateIds" />
+
+        <!-- Unit with Option Menu -->
+        <TextView
+            android:id="@+id/unitid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="UNIT:" />
+
+        <Spinner
+            android:id="@+id/spinnerUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp" />
+
+        <!-- Size -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Size"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- Weight -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Weight"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Weight"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- MRP -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="MRP"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextMRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="MRP"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- HSN -->
+        <TextView
+            android:id="@+id/hsn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="HSN:" />
+
+        <Spinner
+            android:id="@+id/hsnsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Select Company"
+            android:minHeight="48dp" />
+        <!-- GSTIN -->
+        <TextView
+            android:id="@+id/gstin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="GSTIN:" />
+
+        <Spinner
+            android:id="@+id/gstin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Select Company" />
+        <!-- GST Out -->
+        <TextView
+            android:id="@+id/gstout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="GSTOUT:" />
+
+        <Spinner
+            android:id="@+id/gstout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Select Company" />
+        <!-- Purchase Rate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Purchase Rate"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextPurchaseRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Purchase Rate"
+            android:inputType="numberDecimal" />
+
+        <!-- Margin Rs -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Margin Rate"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextMarginRs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Margin Rs"
+            android:inputType="numberDecimal" />
+
+        <!-- Margin % -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Margin (%)"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextMarginPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Margin %"
+            android:inputType="numberDecimal" />
+
+        <!-- Selling Rate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Selling Rate"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextSellingRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Selling Rate"
+            android:inputType="numberDecimal" />
+
+        <!-- Discount % -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Discount (%)"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextDiscountPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Discount %"
+            android:inputType="numberDecimal" />
+
+        <!-- Without Tax MRP -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Without Tax MRP"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextWithoutTaxMRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Without Tax MRP"
+            android:inputType="numberDecimal" />
+
+        <!-- With Tax MRP -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="WIth Tax MRP"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextWithTaxMRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="With Tax MRP"
+            android:inputType="numberDecimal" />
+
+        <!-- Wholesale Rate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Whole Sale Rate"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextWholesaleRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Wholesale Rate"
+            android:inputType="numberDecimal" />
+        <!-- stock -->
+        <TextView
+            android:id="@+id/stk11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="OpeningStock" />
+
+        <TextView
+            android:id="@+id/stk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Opening Quantity" />
+
+        <EditText
+            android:id="@+id/stk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Opening Qty"
+            android:inputType="numberDecimal" />
+
+        <!-- opninig rate -->
+        <TextView
+            android:id="@+id/stkk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Opening Rate" />
+        <EditText
+            android:id="@+id/rate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Opening rate"
+            android:inputType="numberDecimal" />
+        <!-- Wholesale Rate -->
+        <TextView
+            android:id="@+id/stk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Total" />
+        <EditText
+            android:id="@+id/Total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Total"
+            android:inputType="none"
+            android:editable="false"/>
+
+
+
+
+
+
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Cancel" />
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

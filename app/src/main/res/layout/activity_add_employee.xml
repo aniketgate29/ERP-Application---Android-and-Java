@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+        />
+
+    <!-- ScrollView with Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <!-- Your Existing Layout Content -->
+
+            <!-- For Example -->
+            <TextView
+                android:id="@+id/labelEmployeeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:text="Employee Name"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextEmployeeName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/labelEmployeeName"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter employee name" />
+
+        <TextView
+            android:id="@+id/labelAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmployeeName"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Address"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/labelAddress"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:hint="Enter address" />
+
+        <TextView
+            android:id="@+id/PanNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAddress"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Pan Number"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editTextPanNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/PanNumber"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:hint="Enter Pan Number" />
+
+        <TextView
+            android:id="@+id/labelMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPanNumber"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Mobile Number"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextMobile"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/labelMobile"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:hint="Enter Mobile number"
+            android:inputType="phone" />
+
+
+
+
+        <TextView
+            android:id="@+id/labelEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextMobile"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Email"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/labelEmail"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/labelEmployeeCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Employee Code"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextEmployeeCode"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/labelEmployeeCode"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:hint="Enter employee code" />
+        <!-- Existing Views -->
+
+        <TextView
+            android:id="@+id/labelAadharNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmployeeCode"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Aadhar Number"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAadharNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/labelAadharNumber"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:hint="Enter Aadhar number"
+            android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextEmployeeCode"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="120dp"
+                android:text="Add Employee"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAdd"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="19dp"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

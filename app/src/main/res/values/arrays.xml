@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="state_names">
+        <item>JAMMU AND KASHMIR - 01</item>
+        <item>HIMACHAL PRADESH - 02</item>
+        <item>PUNJAB - 03</item>
+        <item>CHANDIGARH - 04</item>
+        <item>UTTARAKHAND - 05</item>
+        <item>HARYANA - 06</item>
+        <item>DELHI - 07</item>
+        <item>RAJASTHAN - 08</item>
+        <item>UTTAR PRADESH - 09</item>
+        <item>BIHAR - 10</item>
+        <item>SIKKIM - 11</item>
+        <item>ARUNACHAL PRADESH - 12</item>
+        <item>NAGALAND - 13</item>
+        <item>MANIPUR - 14</item>
+        <item>MIZORAM - 15</item>
+        <item>TRIPURA - 16</item>
+        <item>MEGHALAYA - 17</item>
+        <item>ASSAM - 18</item>
+        <item>WEST BENGAL - 19</item>
+        <item>JHARKHAND - 20</item>
+        <item>ODISHA - 21</item>
+        <item>CHATTISGARH - 22</item>
+        <item>MADHYA PRADESH - 23</item>
+        <item>GUJARAT - 24</item>
+        <item>DADRA AND NAGAR HAVELI AND DAMAN AND DIU (NEWLY MERGED UT) - 26</item>
+        <item>MAHARASHTRA - 27</item>
+        <item>ANDHRA PRADESH(BEFORE DIVISION) - 28</item>
+        <item>KARNATAKA - 29</item>
+        <item>GOA - 30</item>
+        <item>LAKSHADWEEP - 31</item>
+        <item>KERALA - 32</item>
+        <item>TAMIL NADU - 33</item>
+        <item>PUDUCHERRY - 34</item>
+        <item>ANDAMAN AND NICOBAR ISLANDS - 35</item>
+        <item>TELANGANA - 36</item>
+        <item>ANDHRA PRADESH (NEWLY ADDED) - 37</item>
+        <item>LADAKH (NEWLY ADDED) - 38</item>
+        <item>OTHER TERRITORY - 97</item>
+        <item>CENTRE JURISDICTION - 99</item>
+
+    </string-array>
+
+
+    <array name="static_spinner_options">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+        <!-- Add more items as needed -->
+    </array>
+
+
+
+
+    <string-array name="account_array">
+        <item>Cash</item>
+        <item>Bank</item>
+    </string-array>
+
+    <string-array name="payment_mode_array">
+        <item>Cash</item>
+        <item>UPI</item>
+        <item>Debit Card</item>
+        <item>Credit Card</item>
+    </string-array>
+
+</resources>

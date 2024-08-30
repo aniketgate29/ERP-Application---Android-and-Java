@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:alpha="0.2"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <TextView
+            android:id="@+id/productbatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:text="Product Batch"
+            android:textColor="#87CEEB"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Product Name"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/productNameAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productNameLabel"
+            android:layout_marginTop="8dp"
+            android:hint="Product Name"
+            android:inputType="textAutoComplete" />
+
+        <!-- Batch Name -->
+        <TextView
+            android:id="@+id/batchname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Batch" />
+        <EditText
+            android:id="@+id/editbatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Batch"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+
+        <!-- Enter Quantity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Enter Quantity"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextqty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Qty"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- LinearLayout for Select Date button and Selected Date TextView -->
+
+        <!-- Save Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+
+            <!-- Select Date Button -->
+            <TextView
+                android:id="@+id/selectedDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Date: "
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSelectDate"
+                android:layout_width="43dp"
+                android:layout_height="40dp"
+                android:drawableBottom="@drawable/calander" />
+
+            <!-- TextView to display selected date -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/buttoncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Cancel" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

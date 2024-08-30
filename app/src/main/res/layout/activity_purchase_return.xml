@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+         />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PURCHASE RETURN"
+        android:textSize="20dp"
+        android:textColor="@color/primaryDarkColor"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:id="@+id/Date"
+        android:text=" Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/selectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:inputType="none"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supplier Name:"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/supplierNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Supplier Name"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile No:"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- GSTIN -->
+    <EditText
+        android:id="@+id/mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mno"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddProduct"
+        android:text="Return Product"
+        android:background="@drawable/button_background"
+        android:textColor="@color/primaryDarkColor"
+        android:layout_marginRight="10dp"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount:"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Mobile No -->
+    <EditText
+        android:id="@+id/tamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0000"
+        android:minHeight="48dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Mobile No -->
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mno"
+        android:minHeight="48dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- First horizontal LinearLayout for the top three buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First horizontal LinearLayout for the top three buttons -->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:id="@+id/productEntries1"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnAdd"
+                    android:text="Add"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/primaryDarkColor"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="20dp"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="1dp"
+                    android:id="@+id/btndelete"
+                    android:text="Cancel"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/primaryDarkColor"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>
+
+
+

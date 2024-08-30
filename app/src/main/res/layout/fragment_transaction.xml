@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+    <!-- Invoice Button -->
+    <Button
+        android:id="@+id/invoiceButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Invoice"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Sales Return Button -->
+    <Button
+        android:id="@+id/salesReturnButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sales Return"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Purchase Button -->
+    <Button
+        android:id="@+id/purchaseButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Purchase"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Purchase Chalan Button -->
+    <Button
+        android:id="@+id/purchaseChalanButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Purchase Chalan"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Add Batch Button -->
+
+    <!-- Purchase Return Button -->
+    <Button
+        android:id="@+id/purchaseReturnButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Purchase Return"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Payment Button -->
+    <Button
+        android:id="@+id/paymentButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Receipt Button -->
+    <Button
+        android:id="@+id/receiptButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Receipt"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+        />
+    <!-- Heading TextView -->
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textSize="24sp"
+        android:textColor="@color/primaryDarkColor"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- ScrollView -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHeading"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- A/C with Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account:"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerAccountt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"/>
+
+            <!-- Transaction Date with Calendar -->
+            <TextView
+                android:id="@+id/transacDate"
+                android:text=" Transaction Date"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+            <EditText
+                android:id="@+id/selecttransacDate"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:hint="Select Date"
+                android:focusable="false"
+                android:layout_marginBottom="12dp"
+                android:inputType="none"/>
+
+
+            <TextView
+                android:id="@+id/textViewCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Name:"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+
+            <!-- Customer Name EditText -->
+            <EditText
+                android:id="@+id/editTextCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Customer Name"
+                android:layout_marginBottom="12dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount to pay:"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <!-- Amount EditText -->
+            <!-- Amount EditText -->
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="129dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Enter Amount"
+                android:textSize="18sp"
+                android:layout_marginBottom="14dp"
+                android:padding="8dp"/>
+
+
+            <!-- Payment Mode Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode:"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerPaymentMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="49dp"
+                android:padding="8dp"/>
+
+            <!-- UPI ID EditText and Verify Button -->
+            <LinearLayout
+                android:id="@+id/upiLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextUpiId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="UPI ID"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/buttonVerify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify"/>
+            </LinearLayout>
+
+            <!-- Debit Card Details -->
+            <LinearLayout
+                android:id="@+id/debitCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Card Number"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/editTextExpiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Expiry Date (MM/YY)"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/creditCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextCreditCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Card Number"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/editTextCreditExpiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Expiry Date (MM/YY)"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PAY"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>
+</RelativeLayout>

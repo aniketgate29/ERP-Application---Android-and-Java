@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+        />
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Sales Report Heading -->
+        <!-- Sales Report Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales Report"
+            android:textColor="@color/primaryDarkColor"
+            android:textStyle="bold"
+            android:textSize="25dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Date Range -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- From Date -->
+            <EditText
+                android:id="@+id/fromDateEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="From Date"
+                android:inputType="date"
+                android:padding="6dp"/>
+
+            <!-- To -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:layout_marginStart="8dp"/>
+
+            <!-- To Date -->
+            <EditText
+                android:id="@+id/toDateEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="To Date"
+                android:inputType="date"
+                android:padding="6dp"
+                android:layout_marginStart="8dp"/>
+            <Button
+                android:id="@+id/sortButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- First row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- CardView for "No.of Transactions" -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="       No.of Transactions"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+                <!-- Content of the first field -->
+                <EditText
+                    android:id="@+id/editTextTransactionCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:padding="8dp"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for "Total Sale" -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Total Sale"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+                <!-- Content of the second field -->
+                <EditText
+                    android:id="@+id/editTextTotalPurchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=" "
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for "Balance Due" -->
+
+
+                <!-- Content of the third field -->
+
+        </LinearLayout>
+
+        <!-- CardView for "CName" -->
+        <!-- Single CardView for all fields -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp">
+
+            <!-- Linear layout to hold all the fields -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout android:id="@+id/invoice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

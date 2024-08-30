@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center">
+
+
+
+<ImageView
+    android:id="@+id/paymentlogo"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:foregroundGravity="center"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/paymenttick"
+    android:scaleType="centerCrop" />
+
+<!-- CardView -->
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/paymentlogo"
+    android:layout_margin="16dp"
+    android:elevation="8dp"
+    android:padding="24dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Payment Successful TextView -->
+
+        <!-- Generate Receipt Button -->
+        <TextView
+            android:id="@+id/textViewPaymentSuccessful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Payment Successful !!"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonGenerateReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Receipt"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

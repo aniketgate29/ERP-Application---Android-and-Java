@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BottomNavigationDemo"
+        tools:targetApi="31" >
+
+        <activity
+            android:name=".ChallanIn_View"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddUnitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateLedgerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ledger_View"
+            android:exported="false" />
+        <activity
+            android:name=".ProdcRegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddCropActivity"
+            android:exported="false" />
+        <activity
+            android:name=".godownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParchesReport"
+            android:exported="false" />
+        <activity
+            android:name="SaleReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChallanInReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChallanOutReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Invoice_View"
+            android:exported="false" />
+        <activity
+            android:name=".InvoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Invoice_AddProd"
+            android:exported="false" />
+        <activity
+            android:name=".AddBatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Quotation"
+            android:exported="false" />
+        <activity
+            android:name=".Quotation_Main"
+            android:exported="false" />
+        <activity
+            android:name=".Quotation_product"
+            android:exported="false" />
+        <activity
+            android:name=".ChallanInMain"
+            android:exported="false" />
+        <activity
+            android:name=".product_entry"
+            android:exported="false" />
+        <activity
+            android:name=".Challanout_view"
+            android:exported="false" />
+        <activity
+            android:name=".ChallanOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Parches_Entry"
+            android:exported="false" />
+        <activity
+            android:name=".Parches_Entry_View"
+            android:exported="false" />
+        <activity
+            android:name=".purchasereturnView"
+            android:exported="false" />
+        <activity
+            android:name=".purchaseReturnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sales_return_view"
+            android:exported="false" />
+        <activity
+            android:name=".salesReturnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".purchaseorderInView"
+            android:exported="false" />
+        <activity
+            android:name=".purchaseOrderInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".purchaseOrderOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".purchaseorderoutView"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CropViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".godown_view"
+            android:exported="false" />
+        <activity
+            android:name=".Batch_view"
+            android:exported="false" />
+        <activity
+            android:name=".sales_product_return"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceViewActivty"
+            android:exported="false" />
+        <activity
+            android:name=".Intent_Main"
+            android:exported="false" />
+        <activity
+            android:name=".BankDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Product_View"
+            android:exported="false" />
+        <activity
+            android:name=".Invoice_Services"
+            android:exported="false" />
+        <activity
+            android:name=".product_purchese"
+            android:exported="false" />
+        <activity
+            android:name=".Return_parches"
+            android:exported="false" />
+        <activity
+            android:name=".Unit_View"
+            android:exported="false" />
+    <activity
+        android:name=".ReceiptActivity"
+        android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Paymentsuccessful"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+
+
+        <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="${applicationId}.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths"/>
+    </provider>
+    </application>
+</manifest>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+         />
+
+    <!-- Main Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Services Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services Name:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Spinner for Product Name -->
+        <Spinner
+            android:id="@+id/spinnerProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Product" />
+
+        <!-- Rate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Rate EditText -->
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" />
+
+        <!-- Transport Mode -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transport Mode:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Transport Mode EditText -->
+        <EditText
+            android:id="@+id/transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+        <!-- Vehicle Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Vehicle Number EditText -->
+        <EditText
+            android:id="@+id/vno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" />
+
+        <!-- Place -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Place EditText -->
+        <EditText
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="none" />
+
+        <!-- Narration -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Narration:"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Narration EditText -->
+        <EditText
+            android:id="@+id/Narration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="none" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Save Button -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnsave"
+                android:text="Save"
+                android:background="@drawable/button_background"
+                android:textColor="@color/primaryDarkColor"
+                android:layout_weight="1"
+                android:layout_marginEnd="20dp"/>
+
+            <!-- Cancel Button -->
+            <Button
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="1dp"
+                android:id="@+id/btncancel"
+                android:text="Cancel"
+                android:background="@drawable/button_background"
+                android:textColor="@color/primaryDarkColor"/>
+
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>
